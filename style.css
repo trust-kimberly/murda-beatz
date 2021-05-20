@@ -1,0 +1,412 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F6C82C;
+    font-family: Sen;
+    text-transform: uppercase;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* UNIVERSAL */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-black {
+    min-width: 260px;
+    background-color: black;
+    color: #F6C82A;
+    font-family: Sen;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 5px 40px;
+    transition: all 0.4s ease-in-out;
+    text-transform: uppercase;
+}
+
+.btn-black:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-yellow {
+    min-width: 260px;
+    background-color: #F6C82A;
+    color: black;
+    font-family: Sen;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: all 0.4s ease-in-out;
+    text-transform: uppercase;
+}
+
+.btn-yellow:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* buttons in content container sections */
+.flex-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+button.flex {
+    margin: 5vh 0 0;
+}
+
+/* section padding */
+.content-container {
+    width: auto;
+    padding: 8vh 10vw;
+}
+
+.transparent-title {
+    font-family: Sen;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 14px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    margin-top: 0;
+}
+
+
+
+
+/* LANDING */
+
+#landing {
+    margin: 3vh 4vw;
+    height: 94vh;
+    background-image: url(media/Bitmap.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    flex-grow: 3;
+}
+
+.nav-links {  
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-grow: 1;
+    text-align: right;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.nav-links > li > a:hover {
+    color: white;
+    border-bottom: white 2px solid;
+}
+
+.social-links {
+    width: auto;
+    height: 40%;
+    position: absolute;
+    margin: 5%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.social-links > a > img {
+    max-height: 18px;
+    max-width: 18px;
+}
+
+.hero {
+    position: absolute;
+    bottom: 0;
+    margin: auto 6vw 8vh;
+}
+
+.hero-subtext {
+    font-family: Sedgwick Ave;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 3.33333px;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-family: Sen;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 57px;
+    line-height: 50px;
+    margin-top: 0;
+}
+
+.hero-controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto 6vw 8vh;
+}
+
+.hero-controls > a > img {
+    padding: 0 40px;
+}
+
+
+
+
+
+/* RELEASES CONTENT */
+
+#releases {
+    height: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #353535 65%, #202020 35%);
+}
+
+.releases-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.larger > img {
+    height: 502px;
+    width: 502px;
+    padding: 2px;
+}
+
+.smaller {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smaller > img {
+    height: 248px;
+    width: 248px;
+    padding: 2.5px;
+}
+
+
+
+/* TOUR CONTENT */
+
+#tour {
+    height: auto;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+}
+
+.tour-item {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 65% 35%;
+    grid-template-areas: 
+    "show action";
+    color: white;
+    padding: 40px 0;
+}
+
+.bottom {
+    border-bottom: 1px solid;
+    border-bottom-color: linear-gradient(90deg, rgba(246, 200, 42, 0.2) 0%, rgba(246, 200, 42, 0.4) 49.33%, rgba(246, 200, 42, 0.2) 100%);
+}
+
+.show {
+    grid-area: show;
+}
+
+.action {
+    grid-area: action;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action > a {
+    font-family: Sen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0px;
+    color: #F6C82C;
+    padding: 0 5px;
+}
+
+h3.date {
+    margin: 0;
+    font-family: Sedgwick Ave;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+h3.venue {
+    margin: 0;
+    font-family: Sen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+h3.city {
+    margin: 0;
+    font-family: Sen;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+/* VIDEOS CONTENT */
+
+#videos {
+    height: auto;
+    min-height: 100vh;
+    background-color: #222222
+}
+
+
+
+/* STORE CONTENT */
+
+#store {
+    height: auto;
+    min-height: 100vh;
+    background-color: #F0C226;
+}
+    
+
+
+/* PHOTOS CONTENT */
+
+#photos {
+    height: auto;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+
+
+/* SUBSCRIBE FORM */
+
+#subscribe {
+    height: auto;
+    background-color: #2A2A2A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+}
+
+form {
+    
+}
+
+input#email {
+    width: 342px;
+}
+
+select#country {
+    width: 342px;
+}
+
+h3.subscribe {
+    font-family: Sedgwick Ave;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 2em 0 0.2em;
+}
+
+label {
+    color: #F6C82A;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+
+
+
+
+    .releases-box {
+        flex-wrap: wrap;
+    }
+
+}
