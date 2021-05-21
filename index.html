@@ -12,15 +12,16 @@
     <meta name="twitter:card" content="MURDA ON THE BEAT" />
     <meta name="twitter:site" content="@murdabeatz_" />
     <meta name="twitter:creator" content="@murdabeatz_" />
-    <meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
-    <meta property="og:title" content="MURDA BEATZ" />
+    <meta property="og:url" content="https://trust-kimberly.github.io/murda-beatz/" />
+    <meta property="og:title" content="MURDA ON THE BEAT" />
     <meta property="og:description" content="Grammy award winning multi-platinum producer Murda Beatz launches Quarantine Kit Sample Pack." />
-    <meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" />
+    <meta property="og:image" content="https://trust-kimberly.github.io/murda-beatz/media/Bitmap.png" />
     <title>Murda Beatz</title>
 </head>
 <body>
 
-<!-- landing -->
+<!-- LANDING -->
+
     <div id="landing">
         <nav>
             <div class="logo">
@@ -46,20 +47,22 @@
         <div class="hero">
             <h3 class="hero-subtext">Check out on Splice</h3>
             <h1 class="hero-title">Murda Beatz<br>Quarantine Kit<br>Sample Pack</h1>
-            <button class="btn-black">Listen Now</button>
+            <button class="btn-black" onclick="window.location.href='#videos';">Listen Now</button>
         </div>
         <div class="hero-controls">
             <a href="#"><img src="media/prev.png" alt=""></a>
-            <a href=""><img src="media/next.png" alt=""></a>
+            <a href="#"><img src="media/next.png" alt=""></a>
         </div>
     </div>  
 
     <!-- <div class="hero overlay-vertical overlay-horizontal">
     </div> -->
 
+<!-- RELEASES CONTENT -->
+
     <div id="releases">
         <div class="content-container">
-            <h1 class="transparent-title">Releases</h1>
+            <h1>Releases</h1>
             <div class="releases-box">
                 <div class="larger">
                     <img src="media/releases/release1.png" alt="">
@@ -77,9 +80,11 @@
         </div>
     </div>
 
+<!-- TOUR CONTENT -->
+    
     <div id="tour">
         <div class="content-container">
-            <h1 class="transparent-title">Tour</h1>
+            <h1>Tour</h1>
             <div class="tour-grid">
                 <div class="tour-item bottom">
                     <div class="show">
@@ -160,52 +165,81 @@
         </div>
     </div>
 
+<!-- VIDEOS CONTENT -->
+
     <div id="videos">
         <div class="content-container">
-            <h1 class="transparent-title">Videos</h1>
+            <h1>Videos</h1>
+            <div class="videos-box">
+                <div class="first-frame">
+                    <div class="play-border">
+                        <img id="play-btn" src="/media/play.png" alt="">
+                    </div>
+                    <div class="videos-controls">
+                        <a href="#"><img src="media/prev-yellow.png" alt=""></a>
+                        <a href="#"><img src="media/next-yellow.png" alt=""></a>
+                    </div>
+                </div>
+                <video width="809" src="" poster="/media/videos/video1.png"></video>
+                <video width="809" src="" poster="/media/videos/video2.png"></video>
+            </div>
+
+            <h2 class="song-title">Banana Split</h2>
+            <h3 class="credit">MURDA BEATZ (FEAT. YNW MELLY & LIL DURK)</h3>
             <div class="flex-btn">
                 <button class="flex btn-yellow">View All Videos</button>
             </div>
         </div>
     </div>
 
+<!-- STORE CONTENT -->
+
     <div id="store">
         <div class="content-container">
-            <h1 class="transparent-title">Store</h1>
+            <h1>Store</h1>
             <div class="flex-btn">
                 <button class="flex btn-black">Shop All</button>
             </div>
         </div>
     </div>
 
+<!-- PHOTOS CONTENT -->
+
     <div id="photos">
         <div class="content-container">
-            <h1 class="transparent-title">Photos</h1>
+            <h1>Photos</h1>
             <div class="flex-btn">
                 <button class="flex btn-yellow">View All Photos</button>
             </div>
         </div>
     </div>
 
+<!-- SUBSCRIBE FORM -->
+
     <div id="subscribe">
-        <h1 class="transparent-title">Subscribe</h1>
         <form action="">
-            <input type="text" name="email" id="email" value="EMAIL ADDRESS">
-            <select name="country" id="country">
-                <option value="" selected disabled hidden>COUNTRY</option>
-                <option value="us">US</option>
-                <option value="canada">CANADA</option>
-                <option value="chile">CHILE</option>
-                <option value="vietnam">VIETNAM</option>
-            </select>
+            <h1>Subscribe</h1>
+            <div class="text-values">
+                <input type="text" name="email" id="email" value="EMAIL ADDRESS">
+                <select name="country" id="country">
+                    <option value="" selected disabled hidden>COUNTRY</option>
+                    <option value="us">US</option>
+                    <option value="canada">CANADA</option>
+                    <option value="brazil">BRAZIL</option>
+                    <option value="japan">JAPAN</option>
+                    <option value="vietnam">VIETNAM</option>
+                </select>
+            </div>
             <h3 class="subscribe">Subscribe to emails from:</h3>
-            <label for="murdabeatz">MURDA BEATZ</label>
-            <input type="checkbox" name="murdabeatz" id="murdabeatz">
-            <label for="interscope">INTERSCOPE RECORDS</label>
-            <input type="checkbox" name="interscope" id="interscope">
-            <label for="universal">UNIVERSAL MUSIC GROUP</label>
-            <input type="checkbox" name="universal" id="universal">
-            <p>By submitting this form, you agree to the Universal Music Group Privacy Policy.</p>
+            <div class="checks">
+                <input type="checkbox" name="murdabeatz" id="murdabeatz">
+                <label for="murdabeatz">MURDA BEATZ</label>
+                <input type="checkbox" name="interscope" id="interscope">
+                <label for="interscope">INTERSCOPE RECORDS</label>
+                <input type="checkbox" name="universal" id="universal">
+                <label for="universal">UNIVERSAL MUSIC GROUP</label>
+            </div>
+            <p>By submitting this form, you agree to the <span class="highlight">Universal Music Group Privacy Policy.</span></p>
             <button type="submit" class="btn-yellow">Submit</button>
         </form>
         <footer>

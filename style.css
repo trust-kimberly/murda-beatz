@@ -17,6 +17,29 @@ a {
     color: inherit;
 }
 
+h1 {
+    font-family: Sen;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: 14px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: Sen;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
 .btn-black {
     min-width: 260px;
     background-color: black;
@@ -78,25 +101,12 @@ button.flex {
     padding: 8vh 10vw;
 }
 
-.transparent-title {
-    font-family: Sen;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 70px;
-    line-height: 80px;
-    letter-spacing: 14px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px white;
-    margin-top: 0;
-}
-
-
 
 
 /* LANDING */
 
 #landing {
-    margin: 3vh 4vw;
+    padding: 3vh 4vw;
     height: 94vh;
     background-image: url(media/Bitmap.png);
     background-repeat: no-repeat;
@@ -111,6 +121,10 @@ nav {
 
 .logo {
     flex-grow: 3;
+}
+
+.logo > img {
+    filter: invert(100%);
 }
 
 .nav-links {  
@@ -132,7 +146,7 @@ nav {
 
 .social-links {
     width: auto;
-    height: 40%;
+    height: 36%;
     position: absolute;
     margin: 5%;
     right: 0;
@@ -143,8 +157,12 @@ nav {
 }
 
 .social-links > a > img {
-    max-height: 18px;
-    max-width: 18px;
+    max-height: 22px;
+    max-width: 22px;
+}
+
+.social-links > a > img:hover {
+    filter: invert(100%);
 }
 
 .hero {
@@ -163,13 +181,16 @@ nav {
     margin-bottom: 10px;
 }
 
-.hero-title {
+h1.hero-title {
     font-family: Sen;
     font-style: normal;
     font-weight: 800;
     font-size: 57px;
     line-height: 50px;
+    letter-spacing: 0;
     margin-top: 0;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: transparent;
 }
 
 .hero-controls {
@@ -182,8 +203,9 @@ nav {
 .hero-controls > a > img {
     padding: 0 40px;
 }
-
-
+.hero-controls > a > img:hover {
+    filter: invert(100%);
+}
 
 
 
@@ -204,7 +226,8 @@ nav {
 .larger > img {
     height: 502px;
     width: 502px;
-    padding: 2px;
+    margin: 2px;
+    box-shadow: 0 15px 10px -6px #00000050;
 }
 
 .smaller {
@@ -215,7 +238,8 @@ nav {
 .smaller > img {
     height: 248px;
     width: 248px;
-    padding: 2.5px;
+    margin: 2.5px;
+    box-shadow: 0 15px 10px -6px #00000050;
 }
 
 
@@ -272,6 +296,10 @@ nav {
     padding: 0 5px;
 }
 
+.action > a:hover {
+    color: white;
+}
+
 h3.date {
     margin: 0;
     font-family: Sedgwick Ave;
@@ -306,6 +334,7 @@ h3.city {
 }
 
 
+
 /* VIDEOS CONTENT */
 
 #videos {
@@ -313,6 +342,87 @@ h3.city {
     min-height: 100vh;
     background-color: #222222
 }
+
+.videos-box {
+    width: 90vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.videos-box > video {
+    width: 809px;
+    height: 455px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -6px #00000050;
+}
+
+.first-frame {
+    width: 809px;
+    height: 455px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #00000060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 10px -6px #00000050;
+}
+
+.play-border {
+    position: absolute;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    border: yellow 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play-btn {
+    width: 48px;
+    height: 54px;
+    z-index: 5;
+    transition: 0.4s ease-in-out;
+}
+
+#play-btn:hover{
+    opacity: 0.5;
+}
+
+.videos-controls {
+    position: absolute;
+    right: 0;
+    margin: 570px 0 0 0;
+}
+
+.videos-controls > a > img {
+    padding: 0 40px;
+}
+
+.videos-controls > a > img:hover {
+    filter: grayscale(100%);
+}
+
+
+h2.song-title {
+    line-height: 50px;
+    margin-bottom: 5px;
+}
+
+h3.credit {
+    margin: 0;
+    font-family: Sedgwick Ave;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
 
 
 
@@ -347,19 +457,45 @@ h3.city {
     align-items: center;
     justify-content: center;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 form {
-    
+    margin: 6% 0;
+}
+
+.text-values {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 input#email {
-    width: 342px;
+    width: 48%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px #F6C82A solid;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #F6C82A;
 }
 
 select#country {
-    width: 342px;
+    width: 48%;    
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px #F6C82A solid;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #F6C82A;
 }
 
 h3.subscribe {
@@ -371,7 +507,15 @@ h3.subscribe {
     margin: 2em 0 0.2em;
 }
 
+.checks {
+    margin: auto auto 5%;
+}
+
 label {
+    color: #F6C82A;
+}
+
+.highlight {
     color: #F6C82A;
 }
 
@@ -381,6 +525,15 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: black;
+    color: #F6C82A;
+    font-family: Sen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 
