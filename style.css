@@ -763,6 +763,12 @@ footer {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+    .flex-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #landing {
         background-image: url(media/Bitmap_mobile.png);
         background-repeat: no-repeat;
@@ -839,6 +845,11 @@ footer {
         display: block;
     }
 
+    form {
+        margin: 0;
+        padding: 8vh 10vw;
+    }
+
     .text-values {
         display: block;
     }
@@ -851,10 +862,21 @@ footer {
         width: 90%;
     }
 
+    .checks > input {
+        height: 5px;
+        width: 5px;
+    }
+     
+    label {
+        font-size: 12px;
+    }
+
     footer {
         width: 100vw;
         display: block;
         position: relative;
+        padding: 0;
+        margin: 0;
         bottom: 0;
     }
 
@@ -864,6 +886,12 @@ footer {
   and (min-device-width: 414px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .flex-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     h1 {
         font-size: 30px;
@@ -894,6 +922,11 @@ footer {
         display: block;
     }
 
+    form {
+        margin: 0;
+        padding: 8vh 10vw;
+    }
+
     .text-values {
         display: block;
     }
@@ -906,10 +939,21 @@ footer {
         width: 90%;
     }
 
+    .checks > input {
+        height: 5px;
+        width: 5px;
+    }
+     
+    label {
+        font-size: 12px;
+    }
+
     footer {
         width: 100vw;
         display: block;
         position: relative;
+        padding: 0;
+        margin: 0;
         bottom: 0;
     }
 
