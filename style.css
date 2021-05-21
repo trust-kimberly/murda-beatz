@@ -445,6 +445,7 @@ h3.city {
 
 #play-btn:hover{
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .videos-controls {
@@ -538,7 +539,7 @@ h3.item-price {
     text-align: left;
     color: black;
 }
-    
+
 
 
 /* PHOTOS CONTENT */
@@ -758,12 +759,19 @@ footer {
 }
 
 @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    #landing {
+        background-image: url(media/Bitmap_mobile.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
 
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .nav-links {
@@ -771,8 +779,103 @@ footer {
     }
 
     h1.hero-title {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .hero-controls {
+        display: none;
+    }
+
+    .releases-box {
+        flex-wrap: wrap;
+    }
+
+    .tour-grid {
+        height: auto;
+        display: block;
+    }
+
+    .tour-item {
+        width: 80%;
+        height: auto;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    #videos {
+        height: auto;
+        min-height: 100vh;
+        background-color: #222222
+    }
+
+    .videos-grid {
+        width: 80vw;
+        display: flex;
+        overflow: scroll;
+    }
+
+    .videos-grid > video {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .first-frame {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .videos-controls {
+        display: none;
+    }
+
+    .item {
+        margin-bottom: 20vh;
+    }
+
+    #subscribe {
+        display: block;
+    }
+
+    .text-values {
+        display: block;
+    }
+
+    input#email {
+        width: 90%;
+    }
+
+    input#country {
+        width: 90%;
+    }
+
+    footer {
+        width: 100vw;
+        display: block;
+        position: relative;
+        bottom: 0;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    h1.hero-title {
+        font-size: 30px;
+        line-height: 30px;
     }
 
     .hero-controls {
