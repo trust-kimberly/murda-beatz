@@ -63,35 +63,37 @@
 <!-- RELEASES CONTENT -->
 
     <div id="releases">
+        <div class="darker-tile">
+        </div>
         <div class="content-container">
-            <h1>Releases</h1>
-            <div class="releases-grid">
-                <div class="larger">
-                    <img src="media/releases/release1.png" alt="">
-                </div>
-                <div class="smaller-grid">
-                    <div class="smaller" onmouseover="showOverlay('overlay')" onmouseout="hideOverlay('overlay')">
-                        <div id="overlay">
-                            <h3 class="overlay-title">Boss Man</h3>
-                            <p class="overlay-artist">Rich the Kid</p>
-                            <p class="overlay-action">Download/</p>
+                <h1>Releases</h1>
+                <div class="releases-grid">
+                    <div class="larger">
+                        <img src="media/releases/release1.png" alt="">
+                    </div>
+                    <div class="smaller-grid">
+                        <div class="smaller">
+                            <img src="media/releases/release2.png" alt="">
+                            <div id="overlay">
+                                <h3 class="overlay-title">Boss Man</h3>
+                                <p class="overlay-artist">Rich the Kid</p>
+                                <p class="overlay-action">Download /</p>
+                            </div>
                         </div>
-                        <img src="media/releases/release2.png" alt="">
-                    </div>
-                    <div class="smaller">
-                        <img src="media/releases/release3.png" alt="">
-                    </div>
-                    <div class="smaller">
-                        <img src="media/releases/release4.png" alt="">
-                    </div>
-                    <div class="smaller">
-                        <img src="media/releases/release5.png" alt="">
+                        <div class="smaller">
+                            <img src="media/releases/release3.png" alt="">
+                        </div>
+                        <div class="smaller">
+                            <img src="media/releases/release4.png" alt="">
+                        </div>
+                        <div class="smaller">
+                            <img src="media/releases/release5.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex-btn">
-                <button class="flex btn-yellow">View All Releases</button>
-            </div>
+                <div class="flex-btn">
+                    <button class="flex btn-yellow">View All Releases</button>
+                </div>
         </div>
     </div>
 
@@ -190,6 +192,10 @@
                     <div class="play-border">
                         <img id="play-btn" src="media/play.png" alt="">
                     </div>
+                    <div class="videos-credits">
+                        <h2 class="song-title">Banana Split</h2>
+                        <h3 class="credit">MURDA BEATZ (FEAT. YNW MELLY & LIL DURK)</h3>
+                    </div>
                     <div class="videos-controls">
                         <a href="#"><img src="media/prev-yellow.png" alt=""></a>
                         <a href="#"><img src="media/next-yellow.png" alt=""></a>
@@ -198,10 +204,7 @@
                 <video src="" poster="media/videos/video1.png"></video>
                 <video src="" poster="media/videos/video2.png"></video>
             </div>
-
-            <h2 class="song-title">Banana Split</h2>
-            <h3 class="credit">MURDA BEATZ (FEAT. YNW MELLY & LIL DURK)</h3>
-            <div class="flex-btn">
+            <div class="flex-btn videos-btn">
                 <button class="flex btn-yellow">View All Videos</button>
             </div>
         </div>
@@ -211,7 +214,7 @@
 
     <div id="store">
         <div class="content-container">
-            <h1>Store</h1>
+            <h1 class="store-title">Store</h1>
             <div class="store-grid">
                 <div class="item">
                     <img src="media/store/store1.png" alt="">
@@ -303,16 +306,16 @@
                 <input type="checkbox" name="universal" id="universal">
                 <label for="universal">UNIVERSAL MUSIC GROUP</label>
             </div>
-            <p>By submitting this form, you agree to the <span class="highlight">Universal Music Group Privacy Policy.</span></p>
+            <a class="disclaimer">By submitting this form, you agree to the <span class="highlight">Universal Music Group Privacy Policy.</span></a>
             <button type="submit" class="btn-yellow">Submit</button>
         </form>
-        <footer>
-            <p>©Interscope Records</p>
-            <p>Privacy Policy</p>
-            <p>Terms & Conditions</p>
-            <p>Cookie Choices</p>
-            <p>Do Not Sell My Personal Information</p>
-        </footer>
+        <div class="footer">
+            <a>©Interscope Records</a>
+            <a>Privacy Policy</a>
+            <a>Terms & Conditions</a>
+            <a>Cookie Choices</a>
+            <a>Do Not Sell My Personal Information</a>
+        </div>
     </div>
 
 </body>
