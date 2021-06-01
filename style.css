@@ -540,6 +540,10 @@ h3.credit {
     padding: 0 40px;
 }
 
+.videos-controls > a > img:hover {
+    filter: grayscale(100%);
+}
+
 .videos-btn {
     grid-area: videos-btn;
     margin: 20px 10vw 0 auto;
