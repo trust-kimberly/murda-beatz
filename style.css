@@ -433,7 +433,8 @@ h3.city {
 
 #videos {
     height: auto;
-    background-color: #222222
+    background-image: url(media/darker-tile.png);
+    background-repeat: repeat;
 }
 
 .videos-grid {
@@ -451,6 +452,7 @@ h3.city {
     height: auto;
     grid-area: first-frame;
     position: relative;
+    box-shadow: 0 15px 10px -6px #00000050;
 }
 
 .first-frame > video {
@@ -495,6 +497,7 @@ h3.city {
 .next-frame {
     grid-area: next-frame;
     overflow: hidden;
+    box-shadow: 0 15px 10px -6px #00000050;
 }
 
 .next-frame > video {
